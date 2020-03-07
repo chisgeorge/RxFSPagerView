@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.homepage         = 'https://github.com/chisgeorge/RxFSPagerView'
   spec.license          = { :type => 'MIT', :file => 'LICENSE' }
   spec.author           = { 'chisgeorge' => 'chisgeorge97@gmail.com' }
-  spec.source           = { :git => 'https://github.com/chisgeorge/RxFSPagerView.git', :tag => s.version.to_s }
+  spec.source           = { :git => 'https://github.com/chisgeorge/RxFSPagerView.git', :tag => spec.version.to_s }
   spec.ios.deployment_target = '8.0'
   spec.source_files = 'RxFSPagerView/Classes/**/*'
   spec.dependency 'RxSwift'
