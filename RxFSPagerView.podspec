@@ -1,14 +1,15 @@
 
-Pod::Spec.new do |s|
-  s.name             = 'RxFSPagerView'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of RxFSPagerView.'
-  s.homepage         = 'https://github.com/Pircate/RxFSPagerView'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Pircate' => 'gao497868860@163.com' }
-  s.source           = { :git => 'https://github.com/Pircate/RxFSPagerView.git', :tag => s.version.to_s }
-  s.ios.deployment_target = '8.0'
-  s.source_files = 'RxFSPagerView/Classes/**/*'
-  s.dependency 'RxSwift'
-  s.dependency 'RxCocoa'
+Pod::Spec.new do |spec|
+  spec.name             = 'RxFSPagerView'
+  spec.version          = '0.1.1'
+  spec.summary          = 'A short description of RxFSPagerView.'
+  spec.homepage         = 'https://github.com/chisgeorge/RxFSPagerView'
+  spec.license          = { :type => 'MIT', :file => 'LICENSE' }
+  spec.author           = { 'chisgeorge' => 'chisgeorge97@gmail.com' }
+  spec.source           = { :git => 'https://github.com/chisgeorge/RxFSPagerView.git', :tag => s.version.to_s }
+  spec.ios.deployment_target = '8.0'
+  spec.source_files = 'RxFSPagerView/Classes/**/*'
+  spec.dependency 'RxSwift'
+  spec.dependency 'RxCocoa'
+  spec.dependency 'FSPagerView'
 end

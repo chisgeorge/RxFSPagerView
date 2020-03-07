@@ -51,8 +51,8 @@ public extension Reactive where Base: FSPagerView {
         let source = base.collectionView.rx.didScroll.flatMap({ _ -> Observable<Int> in
             guard self.base.numberOfSections > 0 else { return Observable.never() }
             let currentPage = lround(Double(self.base.scrollOffset)) % self.base.numberOfSections
-            if currentPage != self.base.currentPage {
-                self.base.currentPage = currentPage
+            if currentPage != self.base.currentIndex {
+                self.base.currentIndex = currentPage
                 return Observable.just(currentPage)
             }
             return Observable.never()
